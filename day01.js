@@ -1,0 +1,1 @@
+(s = new Set(), s.add(0), console.log("done:", ($0.innerText.trim() + "\n").repeat(1000).trim().split("\n").map(l => parseInt(l.trim(), 10)).reduce((acc, val, i, arr) => (v = acc + val, s.has(v) ? (console.log(`dup: ${v}`), arr.splice(1)) : void 0, s.add(v), v), 0)))
